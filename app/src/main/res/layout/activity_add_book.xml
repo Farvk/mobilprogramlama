@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        
+        <ImageView
+            android:layout_width="240dp"
+            android:onClick="resimSec"
+            android:src="@color/design_default_color_primary"
+            android:scaleType="fitXY"
+            android:id="@+id/add_book_activity_ImageViewKitapResmi"
+            android:layout_height="300dp"/>
+        <EditText
+            android:layout_width="350dp"
+            android:id="@+id/add_book_activity_editTextKitapIsmi"
+            android:hint="Kitap İsmi Giriniz:"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp"/>
+        <EditText
+            android:layout_width="350dp"
+            android:id="@+id/add_book_activity_editTextKitapYazari"
+            android:hint="Kitap Yazarını Giriniz:"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"/>
+        <EditText
+            android:layout_width="350dp"
+            android:id="@+id/add_book_activity_editTextKitapOzeti"
+            android:hint="Kitap Özeti Giriniz:"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:onClick="kitapKaydet"
+            android:text="KAYDET"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="25dp"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
